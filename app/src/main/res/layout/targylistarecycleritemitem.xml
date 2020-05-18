@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/targyitemcardid"
+    android:padding="15dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/targyhozzaditem"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:text="Tárgy : "
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/Kukakepitem"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/targyhozzaditem"
+        app:layout_constraintEnd_toStartOf="@+id/guide90szazalek"
+        app:layout_constraintStart_toStartOf="@+id/guide90szazalek"
+        app:layout_constraintTop_toTopOf="@+id/targyhozzaditem" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide90szazalek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <TextView
+        android:id="@+id/TargyMennyisegItemID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/targyhozzaditem"
+        app:layout_constraintEnd_toStartOf="@+id/guide90szazalek"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/targyhozzaditem"
+        app:layout_constraintTop_toTopOf="@+id/targyhozzaditem" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

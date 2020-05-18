@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FooldalRecycleViewItem"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp">
+
+    <ImageView
+        android:id="@+id/Fooldalkarakterkep"
+        android:layout_width="130dp"
+        android:layout_height="135dp"
+        android:layout_margin="5dp"
+        android:background="#abcdef"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nevholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:text="Nev : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/recyckeKarakternevItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:autoSizeMaxTextSize="25sp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Nev"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/recycleKarakterSzintitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="110dp"
+        android:maxLines="1"
+        android:text="Szint"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/recycleKarakerFajIttem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"
+        android:text="Faj"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/recycleKarakterKasztItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="85dp"
+        android:maxLines="1"
+        android:text="Kaszt"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/recycleKarakterKorItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="35dp"
+        android:maxLines="1"
+        android:text="Kor"
+        android:textSize="20dp" />
+
+
+</androidx.cardview.widget.CardView>

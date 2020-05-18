@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HozzáadásFragment.FegyverhoaadasFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TargyhozzaadasConstraintID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinnerfegyverhozzadas_fokategoriaid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/GuidelineTargyhozzadas0.95ID"
+            app:layout_constraintStart_toStartOf="@+id/GuidelineTargyhozzadas0.05ID"
+            app:layout_constraintTop_toTopOf="@+id/GuidelineFegyverhozzaad" />
+
+        <Spinner
+            android:id="@+id/spinnerFegyverhozzadasNevID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/GuidelineTargyhozzadas0.95ID"
+            app:layout_constraintStart_toStartOf="@+id/GuidelineTargyhozzadas0.05ID"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerfegyverhozzadas_fokategoriaid" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GuidelineTargyhozzadas0.95ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GuideLine50horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GuidelineTargyhozzadas0.05ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/GuidelineFegyverhozzaad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/FegyverReszletekinkeszitesID"
+            app:layout_constraintBottom_toTopOf="@+id/Guide"
+            app:layout_constraintEnd_toStartOf="@+id/GuidelineTargyhozzadas0.95ID"
+            app:layout_constraintStart_toStartOf="@+id/GuidelineTargyhozzadas0.05ID"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerFegyverhozzadasNevID" />
+
+        <Button
+            android:id="@+id/ButtonSajátFegyver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeMinTextSize="15dp"
+            android:text="Saját fegyver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/GuidelineTargyhozzadas0.95ID"
+            app:layout_constraintStart_toStartOf="@+id/GuideLine50horizontal"
+            app:layout_constraintTop_toTopOf="@+id/Guide" />
+
+        <Button
+            android:id="@+id/buttonMentesFegyver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="25dp"
+            android:autoSizeMinTextSize="15dp"
+            android:text="MEntés"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/GuideLine50horizontal"
+            app:layout_constraintStart_toStartOf="@+id/GuidelineTargyhozzadas0.05ID"
+            app:layout_constraintTop_toTopOf="@+id/Guide" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

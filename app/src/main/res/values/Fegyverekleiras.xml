@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Fegyver_tipusok">
+        <item>@string/SzuroVago</item>
+        <item>Zúzófegyverek</item>
+        <item>Szálfegyverek</item>
+        <item>Célzófegyverek</item>
+        <item>Egyéb fegyverek</item>
+        <item>Pajzs</item>
+    </string-array>
+    <string name="SzuroVago">Szúró/vágófegyverek</string>
+
+
+</resources>

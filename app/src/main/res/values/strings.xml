@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">Magus karakter</string>
+    <string name="fooldalCim" translatable="false">Karakter valaszto</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="r_szletek">Részletek</string>
+    <string name="a">a</string>
+    <string name="asd">Odachi</string>
+    <string name="k">as</string>
+
+
+    <string-array name="felszereles_tipus">
+        <item>Fegyver</item>
+        <item>Páncél</item>
+        <item>Egyéb tárgyak</item>
+    </string-array>
+
+    <string-array name="kepesseg_tipu">
+        <item>Képzetség</item>
+        <item>Varázslat</item>
+    </string-array>
+
+    <string-array name="Kepesseg_tipus">
+        <item>Képzetség</item>
+        <item>Varázslat</item>
+    </string-array>
+
+</resources>

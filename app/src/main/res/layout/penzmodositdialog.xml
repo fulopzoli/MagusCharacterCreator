@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Penzmodositodialog">
+
+    <TextView
+        android:id="@+id/EzustDialogtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ezüst"
+        app:layout_constraintBottom_toBottomOf="@+id/ezustdialogedittext"
+        app:layout_constraintEnd_toEndOf="@+id/Aranydialogtext"
+        app:layout_constraintStart_toStartOf="@+id/Aranydialogtext"
+        app:layout_constraintTop_toTopOf="@+id/ezustdialogedittext" />
+
+    <TextView
+        android:id="@+id/Aranydialogtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arany"
+        app:layout_constraintBottom_toBottomOf="@+id/aranydialogedittext"
+        app:layout_constraintEnd_toStartOf="@+id/aranydialogedittext"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aranydialogedittext" />
+
+    <TextView
+        android:id="@+id/Rezdialogtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rez"
+        app:layout_constraintBottom_toBottomOf="@+id/rezdialogedittext"
+        app:layout_constraintEnd_toEndOf="@+id/EzustDialogtext"
+        app:layout_constraintStart_toStartOf="@+id/EzustDialogtext"
+        app:layout_constraintTop_toTopOf="@+id/rezdialogedittext" />
+
+    <EditText
+        android:id="@+id/aranydialogedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <EditText
+        android:id="@+id/ezustdialogedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/aranydialogedittext"
+        app:layout_constraintTop_toBottomOf="@+id/aranydialogedittext" />
+
+
+    <EditText
+        android:id="@+id/rezdialogedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/ezustdialogedittext"
+        app:layout_constraintTop_toBottomOf="@+id/ezustdialogedittext" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HozzáadásFragment.UjTargyhozzaadasFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Targyhozzaadashorizontal002"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Targyhozzaadashorizontal009"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Targyhozzaadashorizontal005"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Targyhozzaadashorizontal095"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Targyhozzaadashorizontal05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <Spinner
+            android:id="@+id/TargyvalasztoSpinnerID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/Targyhozzaadashorizontal095"
+            app:layout_constraintStart_toStartOf="@+id/Targyhozzaadashorizontal005"
+            app:layout_constraintTop_toTopOf="@+id/Targyhozzaadashorizontal002" />
+
+        <FrameLayout
+            android:id="@+id/UjtargyHozzaadasReszletId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/Targyhozzaadashorizontal009"
+            app:layout_constraintEnd_toStartOf="@+id/Targyhozzaadashorizontal095"
+            app:layout_constraintStart_toStartOf="@+id/Targyhozzaadashorizontal005"
+            app:layout_constraintTop_toBottomOf="@+id/MennyisegUjtargyHozzaadasID">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/SajatTargybutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Saját tárgy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Targyhozzaadashorizontal095"
+            app:layout_constraintStart_toStartOf="@+id/Targyhozzaadashorizontal05"
+            app:layout_constraintTop_toTopOf="@+id/Targyhozzaadashorizontal009" />
+
+        <Button
+            android:id="@+id/MentesTargybutton"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:text="Mentés"
+            app:layout_constraintBottom_toBottomOf="@+id/SajatTargybutton"
+            app:layout_constraintEnd_toStartOf="@+id/Targyhozzaadashorizontal05"
+            app:layout_constraintStart_toStartOf="@+id/Targyhozzaadashorizontal005"
+            app:layout_constraintTop_toTopOf="@+id/SajatTargybutton" />
+
+        <TextView
+            android:id="@+id/MennyisegUjtargyHozzaadasID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Mennyiség : "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/Targyhozzaadashorizontal005"
+            app:layout_constraintTop_toBottomOf="@+id/TargyvalasztoSpinnerID" />
+
+        <EditText
+            android:id="@+id/MennyisegTargySablonID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="@+id/MennyisegUjtargyHozzaadasID"
+            app:layout_constraintEnd_toStartOf="@+id/Targyhozzaadashorizontal095"
+            app:layout_constraintStart_toEndOf="@+id/MennyisegUjtargyHozzaadasID"
+            app:layout_constraintTop_toTopOf="@+id/MennyisegUjtargyHozzaadasID" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

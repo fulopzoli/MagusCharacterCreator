@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.RészletekFragment.PancelReszletFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05
+"/>
+        <TextView
+            android:id="@+id/PancelreszletPancelnevID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Név : "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletGuideline01"
+            app:layout_constraintTop_toTopOf="@+id/guideline11" />
+
+        <TextView
+            android:id="@+id/PancelreszletAnyaga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Anyaga :  "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletPancelnevID"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletPancelnevID" />
+
+        <TextView
+            android:id="@+id/PancelreszletAra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Ára :  "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletPancelnevID"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletSFE" />
+
+        <TextView
+            android:id="@+id/PancelreszletMGT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="MGT :  "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletPancelnevID"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletAnyaga" />
+
+        <TextView
+            android:id="@+id/PancelreszletSFE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SFE :  "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletPancelnevID"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletMGT" />
+
+        <TextView
+            android:id="@+id/PancelreszletSuly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Súly :  "
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletPancelnevID"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletAra" />
+
+        <TextView
+            android:id="@+id/PancelreszletLeiras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Leírás :  "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/PancelreszletGuideline09"
+            app:layout_constraintStart_toStartOf="@+id/PancelreszletGuideline01"
+            app:layout_constraintTop_toBottomOf="@+id/PancelreszletSuly" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/PancelreszletGuideline01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/PancelreszletGuideline09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+</FrameLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Magiareszletleiras">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/MagiaReszletSzvera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:text="Szféra"
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Varazsreszletguiudelinevertical10"
+                app:layout_constraintTop_toBottomOf="@+id/magiareszletnev" />
+
+            <TextView
+                android:id="@+id/magiareszletnev"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MagiaNev: "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Varazsreszletguiudelinevertical10"
+                app:layout_constraintTop_toTopOf="@+id/Varazsreszletguidelinthorizontal45" />
+
+            <TextView
+                android:id="@+id/magialeiras"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/r_szletek"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/Varazsreszletguiudelinevertical90"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Varazsreszletguiudelinevertical10"
+                app:layout_constraintTop_toBottomOf="@+id/MagiareszletFelhasznaltmozaikok" />
+
+            <TextView
+                android:id="@+id/MagiareszletManapont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Mana-pont : "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/MagiaReszletSzvera"
+                app:layout_constraintTop_toBottomOf="@+id/MagiaReszletSzvera" />
+
+            <TextView
+                android:id="@+id/Magiareszleterosseg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:text="Erősség : "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/magiareszletnev"
+                app:layout_constraintTop_toBottomOf="@+id/MagiareszletManapont" />
+
+
+            <TextView
+                android:id="@+id/Magiareszletsebzes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Sebzés : "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Magiareszleterosseg"
+                app:layout_constraintTop_toBottomOf="@+id/Magiareszleterosseg" />
+
+            <TextView
+                android:id="@+id/Varazslasidejeid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:text="Varázslás idelye :  "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Magiareszletsebzes"
+                app:layout_constraintTop_toBottomOf="@+id/Magiareszletsebzes" />
+
+            <TextView
+                android:id="@+id/Magiareszlethatotav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Hatótáv :  "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Magiareszletidotartam"
+                app:layout_constraintTop_toBottomOf="@+id/Magiareszletidotartam" />
+
+            <TextView
+                android:id="@+id/Magiareszletidotartam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Időtartam :  "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Magiareszletellenallas"
+                app:layout_constraintTop_toBottomOf="@+id/Magiareszletellenallas" />
+
+            <TextView
+                android:id="@+id/Magiareszletellenallas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Mágiaellenállás :  "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Varazslasidejeid"
+                app:layout_constraintTop_toBottomOf="@+id/Varazslasidejeid" />
+
+            <TextView
+                android:id="@+id/MagiareszletFelhasznaltmozaikok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Felhasznált mozaikok :  "
+                android:textSize="18dp"
+                app:layout_constraintStart_toStartOf="@+id/Magiareszlethatotav"
+                app:layout_constraintTop_toBottomOf="@+id/Magiareszlethatotav" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/Varazsreszletguidelinthorizontal45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textSize="18dp"
+
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/Varazsreszletguidelinthorizontal90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="319dp"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="1.0"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/Varazsreszletguiudelinevertical10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/Varazsreszletguiudelinevertical90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.90" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.KarakteradatokFragment.KarakteradatokFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/ModositasEpFpMpPszi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Módisítás"
+                android:background="?android:attr/selectableItemBackground"
+                app:layout_constraintBottom_toBottomOf="@+id/FpkarakterAdat"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.836"
+                app:layout_constraintStart_toEndOf="@+id/karaktermanastatid2"
+                app:layout_constraintTop_toTopOf="@+id/karaktermanastatid2" />
+
+            <ImageView
+                android:id="@+id/Karakteradatkep"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="8dp"
+                android:background="#abcdef"
+                app:layout_constraintBottom_toTopOf="@+id/KaraktertextEro"
+                app:layout_constraintStart_toStartOf="@+id/guidelinevertival2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/karaktermanastatid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Mana : "
+                app:layout_constraintStart_toStartOf="@+id/karakterAsztralAdat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterAsztralAdat" />
+
+            <TextView
+                android:id="@+id/karakterVESestat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Vé : "
+                app:layout_constraintStart_toStartOf="@+id/karakterTEestat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterTEestat" />
+
+            <TextView
+                android:id="@+id/karakterCEstat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Cé : "
+                app:layout_constraintStart_toStartOf="@+id/karakterTEestat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterVESestat2" />
+
+
+            <TextView
+                android:id="@+id/karaktermgt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="MGT : "
+                app:layout_constraintStart_toStartOf="@+id/karakterTEestat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterCEstat" />
+
+            <TextView
+                android:id="@+id/karakterKESestat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Ké : "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/KarakterÜgyessegStat"
+                app:layout_constraintTop_toBottomOf="@+id/ghf" />
+
+            <TextView
+                android:id="@+id/karakterTEestat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Té : "
+                app:layout_constraintStart_toStartOf="@+id/karakterKESestat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterKESestat" />
+
+            <TextView
+                android:id="@+id/karakterKasztStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Kaszt"
+                app:layout_constraintStart_toStartOf="@+id/karakternevStat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterFajStat" />
+
+            <TextView
+                android:id="@+id/karakterKorStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Kor"
+                app:layout_constraintStart_toStartOf="@+id/karakternevStat"
+                app:layout_constraintTop_toBottomOf="@+id/karakternevStat" />
+
+            <TextView
+                android:id="@+id/karakterSzintStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Szint"
+                app:layout_constraintStart_toEndOf="@+id/karakterKasztStat"
+                app:layout_constraintTop_toTopOf="@+id/karakterKasztStat" />
+
+            <TextView
+                android:id="@+id/karakterJellemStat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Jellem : "
+                app:layout_constraintStart_toStartOf="@+id/karakterVallasStat2"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/karakterVallasStat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Vallás : "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.064"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/karakternevStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:maxLength="20"
+                android:text="Nev"
+                app:layout_constraintStart_toEndOf="@+id/Karakteradatkep"
+                app:layout_constraintTop_toTopOf="@+id/Karakteradatkep" />
+
+            <TextView
+                android:id="@+id/KarakterAkaratSrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterInteligenciaStat" />
+
+            <TextView
+                android:id="@+id/KaraakterAsztralStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterAkaratSrat" />
+
+            <TextView
+                android:id="@+id/KarakterEgesegStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterAllokepesegStat" />
+
+            <TextView
+                android:id="@+id/KarakterSzepsegStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterEgesegStat" />
+
+            <TextView
+                android:id="@+id/KarakterAllokepesegStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterÜgyessegStat" />
+
+            <TextView
+                android:id="@+id/KarakterGyorsasagStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterEroSrat" />
+
+            <TextView
+                android:id="@+id/KarakterÜgyessegStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterGyorsasagStat" />
+
+            <TextView
+                android:id="@+id/KarakterFajStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Faj"
+                app:layout_constraintStart_toStartOf="@+id/karakternevStat"
+                app:layout_constraintTop_toBottomOf="@+id/karakterKorStat" />
+
+            <TextView
+                android:id="@+id/KarakterInteligenciaStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterSzepsegStat" />
+
+            <TextView
+                android:id="@+id/KaraktertextEro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="35dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Ero : "
+                app:layout_constraintStart_toStartOf="@+id/Karakteradatkep"
+                app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+
+            <TextView
+                android:id="@+id/Karaktergyorsasagadat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Gyorsaság : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/KaraktertextEro" />
+
+            <TextView
+                android:id="@+id/KarakterUgyessegAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Ügyesség : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/Karaktergyorsasagadat" />
+
+            <TextView
+                android:id="@+id/KarakterAllokepesegAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Állóképesség : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterUgyessegAdat" />
+
+            <TextView
+                android:id="@+id/karakterEgesegAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Egészség : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterAllokepesegAdat" />
+
+            <TextView
+                android:id="@+id/karakterSzepsegAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Szépség : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/karakterEgesegAdat" />
+
+            <TextView
+                android:id="@+id/karakterAsztralAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Asztrál : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/karakterAkarateroAdat" />
+
+            <TextView
+                android:id="@+id/karakterAkarateroAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Akaraterő  : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/KarakterInteligenciaAdat" />
+
+            <TextView
+                android:id="@+id/KarakterInteligenciaAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Inteligencia  : "
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toBottomOf="@+id/karakterSzepsegAdat" />
+
+            <TextView
+                android:id="@+id/KarakterEroSrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="valami"
+                app:layout_constraintStart_toStartOf="@+id/KaraktertextEro"
+                app:layout_constraintTop_toTopOf="@+id/KaraktertextEro" />
+
+            <TextView
+                android:id="@+id/karaktermanastatid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeMinTextSize="5sp"
+                android:text="Pszi : "
+                app:layout_constraintStart_toStartOf="@+id/karaktermanastatid2"
+                app:layout_constraintTop_toBottomOf="@+id/karaktermanastatid2" />
+
+            <TextView
+                android:id="@+id/ManaMaxmana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:text="mana/Maxman"
+                app:layout_constraintStart_toStartOf="@+id/karaktermanastatid2"
+                app:layout_constraintTop_toTopOf="@+id/karaktermanastatid2" />
+
+
+            <TextView
+                android:id="@+id/PsziMaxpszi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pszi/MAXPSZI"
+                app:layout_constraintStart_toStartOf="@+id/ManaMaxmana"
+                app:layout_constraintTop_toTopOf="@+id/karaktermanastatid" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:text="Vallás : "
+                app:layout_constraintStart_toEndOf="@+id/KarakterEroSrat"
+                app:layout_constraintTop_toTopOf="@+id/KarakterEroSrat" />
+
+            <TextView
+                android:id="@+id/ghf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Jellem : "
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/EpkarakterAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ép :  "
+                app:layout_constraintStart_toStartOf="@+id/karaktermanastatid"
+                app:layout_constraintTop_toBottomOf="@+id/karaktermanastatid" />
+
+            <TextView
+                android:id="@+id/Epmaxep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ép/Maxep"
+                app:layout_constraintStart_toStartOf="@+id/ManaMaxmana"
+                app:layout_constraintTop_toTopOf="@+id/EpkarakterAdat" />
+
+            <TextView
+                android:id="@+id/Fpmaxfp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Fp/MaxFp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ManaMaxmana"
+                app:layout_constraintTop_toTopOf="@+id/FpkarakterAdat" />
+
+
+            <TextView
+                android:id="@+id/FpkarakterAdat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fp :  "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/EpkarakterAdat"
+                app:layout_constraintTop_toBottomOf="@+id/EpkarakterAdat" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinevertival1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="536dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinevertival2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinevertival3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinevertival4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinevertival5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.51" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/targyhozzaadascard"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="3dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/targyhozzaaditemkep"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/targyhozzaaiditemguideline20"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Targyhozzaditem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:text="Tárgy hozzáadása"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/targyhozzaaditemkep"
+            app:layout_constraintStart_toEndOf="@+id/targyhozzaaditemkep"
+            app:layout_constraintTop_toTopOf="@+id/targyhozzaaditemkep"></TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/targyhozzaaiditemguideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

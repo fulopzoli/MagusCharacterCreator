@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.RészletekFragment.Targyleirasreszletek">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/Targyleirasnev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="20dp"
+                android:text="Tárgynév : "
+                app:layout_constraintStart_toStartOf="@+id/targyleirashuideline02"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/TargymennyisegModositasReszletID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:autoSizeTextType="uniform"
+                android:text="Mennyiség : "
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="@+id/Targyleirasnev"
+                app:layout_constraintTop_toBottomOf="@+id/Targyleirasnev" />
+
+            <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/targyleirashuideline02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/targyleirashuideline08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9"/>
+
+            <TextView
+                android:id="@+id/Tárgyleirasleirasid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Leírás : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/targyleirashuideline08"
+                app:layout_constraintStart_toStartOf="@+id/targyleirashuideline02"
+                app:layout_constraintTop_toBottomOf="@+id/TargymennyisegModositasReszletID" />
+
+            <Button
+                android:id="@+id/MennyisegModositasButtonReszletID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Módosítás"
+                app:layout_constraintBottom_toBottomOf="@+id/TargymennyisegModositasReszletID"
+                app:layout_constraintEnd_toStartOf="@+id/targyleirashuideline08"
+                app:layout_constraintHorizontal_bias="0.839"
+                app:layout_constraintStart_toEndOf="@+id/TargymennyisegModositasReszletID"
+                app:layout_constraintTop_toTopOf="@+id/TargymennyisegModositasReszletID"
+                app:layout_constraintVertical_bias="0.476" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

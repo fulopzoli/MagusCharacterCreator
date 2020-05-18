@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HozzáadásFragment.FegyverSajatHozzaadasFragment">
+0
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Sajatfegyvermentesbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mentés"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites05"
+                app:layout_constraintTop_toTopOf="@+id/guidelineSajatfegyverkeszites095h" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyvernev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverNevtexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverNevtexView" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverSebzés"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverSebzestexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverSebzestexView" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverSe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverSetexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverSetexView"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverVe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverVetexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editTextSajatfegyfverSe"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverVetexView" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverKe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverKetexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverKetexView" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverSuly"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverSulytexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverSulytexView" />
+
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverAr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="1"
+                app:layout_constraintBottom_toBottomOf="@+id/SajatfegyverArtexView"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/SajatfegyverArtexView" />
+
+            <EditText
+                android:id="@+id/editTextSajatfegyfverLeiras"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/textboxedit"
+                android:ems="10"
+                app:layout_constraintBottom_toTopOf="@+id/guidelineSajatfegyverkeszites095h"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverLeirastexView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinnerSajatfegyver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites095"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintTop_toTopOf="@+id/guidelineSajatfegyverkeszites002" />
+
+            <TextView
+                android:id="@+id/SajatfegyverkategoriatexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kategória : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toTopOf="@+id/guidelineSajatfegyverkeszites002" />
+
+            <TextView
+                android:id="@+id/SajatfegyverNevtexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Név : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverkategoriatexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverSebzestexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Sebzés : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverNevtexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverSetexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Se : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverSebzestexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverVetexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ve : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverSetexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverKetexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ke : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverVetexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverSulytexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Súly : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverKetexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverArtexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ár : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverSulytexView" />
+
+            <TextView
+                android:id="@+id/SajatfegyverLeirastexView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Leírás : "
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineSajatfegyverkeszites035"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guidelineSajatfegyverkeszites005"
+                app:layout_constraintTop_toBottomOf="@+id/SajatfegyverArtexView" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites035"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites095"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites005"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites002"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineSajatfegyverkeszites095h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.90" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

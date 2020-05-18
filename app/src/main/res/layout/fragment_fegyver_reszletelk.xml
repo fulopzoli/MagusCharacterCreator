@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.RészletekFragment.FegyverReszletelkFragment">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/FegyverReszletekNevID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Név"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineFegyverreszlet0.1"
+            app:layout_constraintTop_toTopOf="@+id/Varazsreszletguidelinthoriz5" />
+
+        <TextView
+            android:id="@+id/fegyverReszletekSebzesID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SEBZÉS  :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineFegyverreszlet0.1"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletekTipusID" />
+
+        <TextView
+            android:id="@+id/fegyverReszletekTipusID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tipus  :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/FegyverReszletekNevID"
+            app:layout_constraintTop_toBottomOf="@+id/FegyverReszletekNevID" />
+
+        <TextView
+            android:id="@+id/fegyverReszletekSebzOERTEKID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="SE:   :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/guidelineFegyverreszlet0.1"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletekSebzesID" />
+
+
+        <TextView
+            android:id="@+id/fegyverReszletekvedoertekID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="VE:   :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/fegyverReszletekSebzOERTEKID"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletekSebzOERTEKID" />
+
+        <TextView
+            android:id="@+id/fegyverReszletKezdoErtekID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="KE:   :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/fegyverReszletekvedoertekID"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletekvedoertekID" />
+
+        <TextView
+            android:id="@+id/fegyverReszletÁRID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="ár :"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="@+id/fegyverReszletKezdoErtekID"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletKezdoErtekID" />
+
+        <TextView
+            android:id="@+id/fegyverleirasFragmentID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Leírás : "
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineFegyverreszlet0.9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guidelineFegyverreszlet0.1"
+            app:layout_constraintTop_toBottomOf="@+id/fegyverReszletÁRID" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/Varazsreszletguidelinthoriz5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textSize="18dp"
+
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineFegyverreszlet0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineFegyverreszlet0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
